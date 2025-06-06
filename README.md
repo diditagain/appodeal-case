@@ -162,3 +162,5 @@ I used AI quite a lot (Copilot for auto complete, Mistral for code generation an
 I think we all must admit that using AI is something reflexive at this point. Since I also code other stuff than Unity (through roo code with custom API) I'm well aware we're far away from trusting it. Regardless, it's an essential part of programming even in these terms.
 
 I think what I'm happy about is (at least for now) I realize AI tools are really good at boring part of my job (Drag and drop being a major example). So for now, I have nothing to complain.
+
+Note: I DID NOT use AI to write this README. However, this doesn't mean I won't in the future. Since this is one of the first interactions with the Dev team, I wanted to keep my writing as close to my real communication as possible.  
