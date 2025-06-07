@@ -9,6 +9,9 @@ You can easily implement it in your game without hussle.
 
 Project is based on just 4 scripts following MVC model. 
 
+![GIF](https://github.com/diditagain/appodeal-case/blob/main/Assets/Unity_VjYiunuTn2.gif))
+
+
 ### Structure
 -----
 
