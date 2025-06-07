@@ -27,7 +27,7 @@ public class CardView : MonoBehaviour
         SpriteRenderer = GetComponent<SpriteRenderer>();
 
         Color = SpriteRenderer.color;
-}
+    }
 
     public void SetCard(string label, Color color)
     {
@@ -52,7 +52,7 @@ public class CardView : MonoBehaviour
             transform.position = new Vector3(mousePos.x, mousePos.y, -9);
         }
     }
-#endregion
+    #endregion
     void OnMouseUp()
     {
         if (_isDragging)
@@ -83,6 +83,11 @@ public class CardView : MonoBehaviour
         OnCardDropped?.Invoke(this, destinationStack, true);
         return true;
         /// Can be extended depending on game design
+    }
+    
+    private void OnDestroy() {
+        // Unsubscribe from the event to prevent memory leaks
+        OnCardDropped.RemoveAllListeners();
     }
 }
 
