@@ -15,7 +15,7 @@ Project is based on just 4 scripts following MVC model.
 ### Structure
 -----
 
-Diagram for project (Mermaid code generated using Minstral AI)
+Diagram for project (Mermaid code generated using Qwen AI)
 
 [![](https://mermaid.ink/img/pako:eNp9Vdtu4jAQ_RXLT1SFKtwK-GGlFvYmLUtV2j7sslqZxKTZJjayndIWwbfv2IEkTlN4iC9zZjwzZ2bYYl8EDBPsx1SpSURDSZMFR_CzN-grTdiUchoyibaZwPxa6O9SUBmMBddSxDGTBF27Fw6Yp8mSydlqDBBFUMS1I055IK5TrQUHM3Z1xIrpdD2hmhI0P24LwDn6zpWm3Gek7G4ZcLWhT6xxVr6aayp1zZWx0FgKESOV-j5T6gDZLXg5L5VgK7kBd_wniNOEOzf7h4htfv9xMIl4ZlZGkF32BjyFyykwEu_f5xpCJ8h4VvZ5xq-F0GORrGOmWUDQPY_06-dnxvXeYPdOgExbvxt5FlEAHycJV0FgHLkT1qmG2RvnkQ-bphsQuhP5uWk9Q5KFkdJMmjgcs7clQWF0XGP0ixTJwWT1Nbt3zN5D4TTqGcofqVCTRvoHXbKYoDv2oqdMPd5IUYbkr1b4c8xEaiJpGEY8rHLSQjMZgYDGN0JFOjI1_cB8LWS3DJqvZaTZLeMBk6Z73LPjj4gFAOxSYdP411BaghsoNkE1MxjyzffMLZSpSBWbiA1v1AognFrB_dq9nkIr5SwW7ARMaQjaxJvRVM5LDTWF5rZs_TAgio4wkL2L4Ad2PrRflLdj-2ea1E-g7NkbyVZ0mc2Q2fIfUFZG2MY5DZlDaYHpjI9yt59nrKgDiUdRTVby_n-fFZJXdFmSd8uHxXp-bJxaRO5DedC3Wp_eDTgCUxaqmcbRG1OZShVi1FxqCcpMKpRNxNN6B5VvlAcxqJiJg8yUTGCYnVAt2Ibpp4yi4KsoTKUtxtNPFvmGcSCNi_ZFhZs4lFGAiZYpa-KEyYSaI7a0LLB-BK8WmMA2oPJpgRd8Bzpryn8JkRzVpEjDR0xWNFZwStcwbNnhPza_lbbjxyLlGpN2z7NGMNniFzj2-xedXq_neR4sILxs4ldMWp2L0eVgNBp6ncHQa_fb3cGuid_sw97FqHvZaw9Gw-HAG3SH_c7uPyzHc40?type=png)](https://mermaid.live/edit#pako:eNp9Vdtu4jAQ_RXLT1SFKtwK-GGlFvYmLUtV2j7sslqZxKTZJjayndIWwbfv2IEkTlN4iC9zZjwzZ2bYYl8EDBPsx1SpSURDSZMFR_CzN-grTdiUchoyibaZwPxa6O9SUBmMBddSxDGTBF27Fw6Yp8mSydlqDBBFUMS1I055IK5TrQUHM3Z1xIrpdD2hmhI0P24LwDn6zpWm3Gek7G4ZcLWhT6xxVr6aayp1zZWx0FgKESOV-j5T6gDZLXg5L5VgK7kBd_wniNOEOzf7h4htfv9xMIl4ZlZGkF32BjyFyykwEu_f5xpCJ8h4VvZ5xq-F0GORrGOmWUDQPY_06-dnxvXeYPdOgExbvxt5FlEAHycJV0FgHLkT1qmG2RvnkQ-bphsQuhP5uWk9Q5KFkdJMmjgcs7clQWF0XGP0ixTJwWT1Nbt3zN5D4TTqGcofqVCTRvoHXbKYoDv2oqdMPd5IUYbkr1b4c8xEaiJpGEY8rHLSQjMZgYDGN0JFOjI1_cB8LWS3DJqvZaTZLeMBk6Z73LPjj4gFAOxSYdP411BaghsoNkE1MxjyzffMLZSpSBWbiA1v1AognFrB_dq9nkIr5SwW7ARMaQjaxJvRVM5LDTWF5rZs_TAgio4wkL2L4Ad2PrRflLdj-2ea1E-g7NkbyVZ0mc2Q2fIfUFZG2MY5DZlDaYHpjI9yt59nrKgDiUdRTVby_n-fFZJXdFmSd8uHxXp-bJxaRO5DedC3Wp_eDTgCUxaqmcbRG1OZShVi1FxqCcpMKpRNxNN6B5VvlAcxqJiJg8yUTGCYnVAt2Ibpp4yi4KsoTKUtxtNPFvmGcSCNi_ZFhZs4lFGAiZYpa-KEyYSaI7a0LLB-BK8WmMA2oPJpgRd8Bzpryn8JkRzVpEjDR0xWNFZwStcwbNnhPza_lbbjxyLlGpN2z7NGMNniFzj2-xedXq_neR4sILxs4ldMWp2L0eVgNBp6ncHQa_fb3cGuid_sw97FqHvZaw9Gw-HAG3SH_c7uPyzHc40)
 
@@ -165,9 +165,14 @@ Holds referances our prefabs, possible suits/colors and number of cards to insta
 
 ### AI Usage in Project
 ------
-I used AI quite a lot (Copilot for auto complete, Mistral for code generation and search (questions, mostly.)), both as a coder and as a search engine. Mostly the latter. 
-I think we all must admit that using AI is something reflexive at this point. Since I also code other stuff than Unity (through roo code with custom API) I'm well aware we're far away from trusting it. Regardless, it's an essential part of programming even in these terms.
+I used AI quite a lot (Copilot and Qwen), both as a coder and as a search engine. 
+I think we all must admit that using AI tools should be something reflexive at this point. Since I also code other stuff than Unity (through roo code with custom API) I'm well aware we're far away from fully trusting it. Regardless, it's an essential part of programming even in these terms.
 
-I think what I'm happy about is (at least for now) I realize AI tools are really good at boring part of my job (Drag and drop being a major example). So for now, I have nothing to complain.
+#### Example Prompts
+- "I want to drag and drop a Unity2D object and be able detect if it's in collision with a certain object. How can I achieve this?"
+
+- (Using RooCode with Google API) "I have a unity project. Fnctionality is: Stack and undo system for a solitaire like game. Game doesn't have a design, a purpose or something. Just to show my capabilities. Here are the files. Take a look at them and give me the mermaid code for structure."
+
+I think what I'm happy about is; (at least for now) AI tools are really good at boring part of my job (Drag and drop being a major example). So for now, I have nothing to complain.
 
 Note: I DID NOT use AI to write this README. However, this doesn't mean I won't in the future. Since this is one of the first interactions with the Dev team, I wanted to keep my writing as close to my real communication as possible.  
