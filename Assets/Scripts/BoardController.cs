@@ -23,12 +23,15 @@ public class BoardController : MonoBehaviour
 
     private Stack<CardMoveModel> _moveStack = new();
 
+    private Vector2 _cardOffset;
     private bool _boardSet;
+
     public UnityEvent<bool> OnBootCompleted;
 
     public void SetBoard(SetupData data)
     {
         _stacks = Instantiate(data.BoardPrefab).GetComponentsInChildren<CardStackView>();
+        _cardOffset = data.CardOffsetOnStack;
         for (int i = 0; i < data.NumOfCards; i++)
         {
             CardView card = Instantiate(data.CardPrefab).GetComponent<CardView>();
@@ -48,7 +51,7 @@ public class BoardController : MonoBehaviour
         var fromStack = card.CardStack;
 
         card.transform.SetParent(ToCardStack.transform);
-        card.transform.localPosition = cardStack.Count > 0 ? cardStack.Peek().transform.localPosition + new Vector3(-0.02f, -0.02f, -0.1f) : new Vector3(0, 0, -0.1f);
+        card.transform.localPosition = cardStack.Count > 0 ? cardStack.Peek().transform.localPosition + new Vector3(_cardOffset.x, _cardOffset.y, -0.1f) : new Vector3(0, 0, -0.1f);
         cardStack.Push(card);
         card.CardStack = ToCardStack;
         if (!_boardSet)
