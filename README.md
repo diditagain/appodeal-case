@@ -135,11 +135,11 @@ Color Color;
 
 I won't get into drag/drop functionality since it's pretty straightforward using Monobehavior's built in methods. That's one of the few parts where I let AI take the lead. And it did a good job. After we drop card on a stack, we invoke `OnCardDropped` event, which we subscribed on BoardController. 
 
-Note: How safe or logical to subscribe to an event in a loop with possible of hundred iterations? With UnityEvents, I'd say it's pretty safe. 
+Note: How safe or logical to subscribe to an event in a loop with possible of hundred iterations? With UnityEvents, I'd say it's pretty safe. Plus, I already unsub from object if it gets destroyed.
 
 #### CardStackView
 
-A class just with a `Stack<>`. Holds the data of cards on that stack. Also used as a model for simplicity.
+A class just with a `Stack<>`. Holds the data of cards on that stack. Also used as the model for simplicity.
 
 #### SetupData (ScriptableObject)
 
@@ -159,9 +159,12 @@ Holds referances our prefabs, possible suits/colors and number of cards to insta
 ### Roadmap
 -----
 
-- [ ] Planning to split data from scripts. Scriptable Objects will be used for Views and Models alike. 
-- [ ] Use addressables for assets
-- [ ] Tweening for animations
+- [x] Planning to split data from scripts. Scriptable Objects will be used for Views and Models alike. (Already did afterwards, as project gets bigger, we may create bigger).
+- [ ] Object pooling cards when we need to recycle them. 
+- [ ] Move undo system to controller from GameManager singleton. For now making another script for it makes project bloat.
+- [ ] Use addressables for assets (If project gets big). May reduce load time of game. 
+- [ ] Tweening for undo animation.
+- [ ] Centralize events (using EventBus). If we're to create more events, it will be easier to keep track of different events in one place.
 
 ### AI Usage in Project
 ------
