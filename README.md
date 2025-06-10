@@ -150,6 +150,7 @@ public class SetupData : ScriptableObject
     public GameObject CardPrefab, BoardPrefab;
     public string[] Suits;
     public Color[] Colors;
+    public Vector2 CardOffsetOnStack;
 } 
 ```
 
